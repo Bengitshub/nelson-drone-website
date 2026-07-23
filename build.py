@@ -31,11 +31,11 @@ from pathlib import Path
 
 # ---- Site config -----------------------------------------------------------
 # PLACEHOLDER values — swap for the real ones before launch.
-# Brand: FORTYONE SOUTH — Drone Film Studio (per spec v1.1). Domain unregistered.
-SITE_URL = "https://www.fortyonesouth.co.nz"
+# Brand: NELSON DRONE CO. — Aerial photo & video (spec v1.3). Domain unregistered.
+SITE_URL = "https://www.nelsondrone.co.nz"
 PHONE_TEL = "+6430000000"
 PHONE_DISPLAY = "03 000 0000"
-EMAIL = "hello@fortyonesouth.co.nz"
+EMAIL = "hello@nelsondrone.co.nz"
 BUSINESS_ID = SITE_URL + "/#business"
 
 ROOT = Path(__file__).resolve().parent
