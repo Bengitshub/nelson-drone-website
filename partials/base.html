@@ -6,16 +6,14 @@
   <title>{{title}}</title>
   <meta name="description" content="{{description}}" />
   <meta name="keywords" content="{{keywords}}" />
-  <meta name="theme-color" content="#0b0c0c" />
+  <meta name="theme-color" content="#0d1311" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
 
-  <!-- Local / geo targeting (Nelson, NZ) -->
   <meta name="geo.region" content="NZ-NEL" />
   <meta name="geo.placename" content="Nelson, New Zealand" />
   <meta name="geo.position" content="-41.2706;173.2840" />
   <meta name="ICBM" content="-41.2706, 173.2840" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Wide Arc — Drone Film Studio" />
   <meta property="og:title" content="{{title}}" />
@@ -28,11 +26,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="/static/css/styles.css?v={{v}}" />
 
-  <!-- Site-wide LocalBusiness structured data. NOTE: phone/email/socials are
+  <!-- Site-wide LocalBusiness structured data. NOTE: contact/socials are
        PLACEHOLDERS — replace with real, verified NAP before launch. -->
   <script type="application/ld+json">
   {
@@ -53,7 +51,7 @@
     ],
     "address": { "@type": "PostalAddress", "addressLocality": "Nelson", "addressRegion": "Nelson-Tasman", "addressCountry": "NZ" },
     "geo": { "@type": "GeoCoordinates", "latitude": -41.2706, "longitude": 173.2840 },
-    "knowsAbout": ["drone videography", "aerial cinematography", "fly-through films", "tourism video", "property video", "360 capture"],
+    "knowsAbout": ["drone videography", "aerial cinematography", "fly-through films", "tourism video", "property video"],
     "sameAs": ["https://www.instagram.com/", "https://www.youtube.com/"],
     "slogan": "The whole place, in motion."
   }
@@ -65,13 +63,15 @@
   <header class="site-header" id="site-header">
     <div class="container-wide header-inner">
       <a class="brand" href="/" aria-label="Wide Arc — home">
-        <span class="arc-mark" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M20 12a8 8 0 1 0-4 6.93" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
-            <circle cx="16" cy="18.93" r="1.7" fill="currentColor"/>
+        <span class="ridge" aria-hidden="true">
+          <svg width="40" height="30" viewBox="0 0 42 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+            <path d="M2 7 Q21 18 40 7"/><path d="M2 13 Q21 24 40 13"/><path d="M2 19 Q21 30 40 19"/><path d="M2 25 Q21 36 40 25"/>
           </svg>
         </span>
-        <span class="wordmark">Wide&nbsp;Arc</span>
+        <span class="wordmark">
+          <span class="wm-name">Wide Arc</span>
+          <span class="wm-sub">Nelson Tasman · 41°S</span>
+        </span>
       </a>
 
       <nav class="nav" aria-label="Primary">
@@ -97,10 +97,10 @@
     <div class="container-wide footer-grid">
       <div class="footer-brand">
         <a class="brand" href="/" aria-label="Wide Arc — home">
-          <span class="arc-mark" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 0-4 6.93" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><circle cx="16" cy="18.93" r="1.7" fill="currentColor"/></svg>
+          <span class="ridge" aria-hidden="true">
+            <svg width="38" height="28" viewBox="0 0 42 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M2 7 Q21 18 40 7"/><path d="M2 13 Q21 24 40 13"/><path d="M2 19 Q21 30 40 19"/><path d="M2 25 Q21 36 40 25"/></svg>
           </span>
-          <span class="wordmark">Wide&nbsp;Arc</span>
+          <span class="wordmark"><span class="wm-name">Wide Arc</span><span class="wm-sub">Nelson Tasman · 41°S</span></span>
         </a>
         <p>Cinematic drone films that move through, around and above real places across Nelson Tasman.</p>
       </div>
@@ -137,8 +137,8 @@
       </div>
     </div>
     <div class="container-wide footer-base">
-      <span>&copy; {{year}} Wide Arc. Nelson Tasman, New Zealand.</span>
-      <span>Working draft — brand, contact details, media and legal entity are placeholders pending verification.</span>
+      <span>© {{year}} Wide Arc · Nelson Tasman, Aotearoa New Zealand</span>
+      <span>Working draft · brand, contact, media &amp; legal entity are placeholders</span>
     </div>
   </footer>
 
