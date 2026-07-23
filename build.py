@@ -31,11 +31,11 @@ from pathlib import Path
 
 # ---- Site config -----------------------------------------------------------
 # PLACEHOLDER values — swap for the real ones before launch.
-# Brand: WIDE ARC — Drone Film Studio (per spec v1.1). Domain unregistered.
-SITE_URL = "https://www.widearc.co.nz"
+# Brand: FORTYONE SOUTH — Drone Film Studio (per spec v1.1). Domain unregistered.
+SITE_URL = "https://www.fortyonesouth.co.nz"
 PHONE_TEL = "+6430000000"
 PHONE_DISPLAY = "03 000 0000"
-EMAIL = "hello@widearc.co.nz"
+EMAIL = "hello@fortyonesouth.co.nz"
 BUSINESS_ID = SITE_URL + "/#business"
 
 ROOT = Path(__file__).resolve().parent
@@ -54,7 +54,7 @@ SERVICE_SLUGS = {
     "business-social-content-nelson",
 }
 EYEBROW = {
-    "services": "What we do", "about": "About Skyframe",
+    "services": "What we make", "about": "About the studio",
     "contact": "Get in touch", "drone-rules-nelson": "Guide",
 }
 AREA_SERVED = [

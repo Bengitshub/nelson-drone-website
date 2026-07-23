@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.widearc.co.nz/sitemap.xml
+Sitemap: https://www.fortyonesouth.co.nz/sitemap.xml
