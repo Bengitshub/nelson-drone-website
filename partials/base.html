@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{title}}</title>
   <meta name="description" content="{{description}}" />
+  <meta name="keywords" content="{{keywords}}" />
   <meta name="theme-color" content="#0a0d12" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  <!-- Local / geo targeting (Nelson, NZ) -->
+  <meta name="geo.region" content="NZ-NEL" />
+  <meta name="geo.placename" content="Nelson, New Zealand" />
+  <meta name="geo.position" content="-41.2706;173.2840" />
+  <meta name="ICBM" content="-41.2706, 173.2840" />
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website" />
@@ -15,7 +23,7 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="canonical" href="https://example.netlify.app/" />
+  <link rel="canonical" href="{{canonical}}" />
 
   <!-- Fonts (swap for self-hosted before launch if preferred) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,6 +31,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="/static/css/styles.css?v={{v}}" />
+
+  <!-- Site-wide LocalBusiness structured data. NOTE: phone/email/socials are
+       PLACEHOLDERS — replace with real NAP details before launch (must match
+       the Google Business Profile exactly). -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["ProfessionalService", "LocalBusiness"],
+    "@id": "{{site_url}}/#business",
+    "name": "Skyframe",
+    "description": "FPV drone videography and photography in Nelson and Tasman — immersive, cinematic one-take aerial films for venues, tourism, real estate and events.",
+    "url": "{{site_url}}/",
+    "telephone": "+64-3-000-0000",
+    "email": "hello@skyframe.nz",
+    "image": "{{site_url}}/static/assets/og.svg",
+    "priceRange": "$$",
+    "areaServed": [
+      { "@type": "City", "name": "Nelson" },
+      { "@type": "AdministrativeArea", "name": "Tasman" },
+      { "@type": "AdministrativeArea", "name": "Marlborough" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nelson",
+      "addressRegion": "Nelson-Tasman",
+      "addressCountry": "NZ"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -41.2706, "longitude": 173.2840 },
+    "knowsAbout": ["FPV drone videography", "aerial cinematography", "real estate video", "event videography", "tourism marketing video"],
+    "sameAs": [
+      "https://www.instagram.com/",
+      "https://www.youtube.com/",
+      "https://www.tiktok.com/"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Drone film services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Venue & hospitality fly-through films" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tourism & adventure films" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Real estate drone video" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event & wedding films" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social & business content" } }
+      ]
+    }
+  }
+  </script>
 </head>
 <body class="{{body_class}}">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -91,8 +146,8 @@
       <div class="footer-col">
         <h3>Get in touch</h3>
         <ul>
-          <li><a href="mailto:hello@example.co.nz">hello@example.co.nz</a></li>
-          <li><a href="tel:+64000000000">+64 00 000 0000</a></li>
+          <li><a href="mailto:hello@skyframe.nz">hello@skyframe.nz</a></li>
+          <li><a href="tel:+6430000000">03 000 0000</a></li>
           <li class="footer-social">
             <a href="#" aria-label="Instagram">Instagram</a>
             <a href="#" aria-label="YouTube">YouTube</a>

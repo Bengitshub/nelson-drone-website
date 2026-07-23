@@ -246,9 +246,20 @@ h1,h2,h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.08
 }
 .book-title { font-size: clamp(2rem, 5vw, 3.2rem); }
 .book-sub { color: var(--muted); font-size: 1.1rem; margin: 16px auto 30px; max-width: 520px; }
-.book-cta { display: flex; flex-direction: column; align-items: center; gap: 14px; }
-.book-or { color: var(--muted-2); font-size: .85rem; text-transform: uppercase; letter-spacing: .1em; }
-.book-embed-note { font-size: .9rem; color: var(--muted-2); border: 1px dashed var(--line); padding: 10px 18px; border-radius: 100px; }
+.book-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-bottom: 30px; }
+.book-calendar { max-width: 720px; margin: 0 auto; min-height: 150px; position: relative; border: 1px dashed var(--line); border-radius: var(--radius); background: rgba(255,255,255,.02); display: grid; place-items: center; padding: 24px; }
+.book-calendar .ph-tag { position: static; text-align: center; }
+
+/* ---------- FAQ ---------- */
+.faq-list { max-width: 820px; margin-inline: auto; display: grid; gap: 12px; }
+.faq-item { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; transition: border-color .25s var(--ease); }
+.faq-item[open] { border-color: var(--muted-2); }
+.faq-item summary { list-style: none; cursor: pointer; padding: 20px 24px; font-family: var(--font-display); font-weight: 500; font-size: 1.05rem; color: var(--text); display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; font-size: 1.6rem; color: var(--accent-2); transition: transform .3s var(--ease); line-height: 1; flex-shrink: 0; }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-a { padding: 0 24px 22px; color: var(--muted); }
+.faq-a p { max-width: 68ch; }
 
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--line); background: var(--bg-2); padding-top: 64px; }
