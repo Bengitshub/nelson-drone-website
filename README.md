@@ -1,26 +1,40 @@
-# Nelson FPV Drone Website (working name: **Skyframe**)
+# Nelson Drone Co. — website
 
-Static marketing site for a Nelson–Tasman FPV drone film business.
-Built the same way as the other sites in `~/Sites`: a small Python builder
-assembles pages from partials into a deploy folder that Netlify serves as-is.
-**No Node required.**
+Static marketing site for **Nelson Drone Co.**, a one-pilot aerial photography
+and video business serving Nelson, Tasman and Marlborough (NZ).
+The business and copy decisions live in [`docs/BRIEF.md`](docs/BRIEF.md) — the
+owner's brief. Built the same way as the other sites in `~/Sites`: a small
+Python builder assembles pages from partials into a deploy folder that Netlify
+serves as-is. **No Node required.**
+
+## The business model (short)
+
+Photo / video-clip / short-highlight / progress packages from NZ$245–695
+("from" pricing, written quote before every flight). Booking is a **request**
+via a Cal.com embed (requires confirmation) synced to Google Calendar.
+Invoicing is done with **Stripe** after delivery — no payment on the site.
 
 ## Stack
+
 - Hand-written HTML/CSS/vanilla JS — no framework.
-- `build.py` (Python 3 stdlib) assembles `pages/*` + `partials/base.html` → `nelson-drone-netlify-deploy/`.
-- Booking: Cal.com "Requires Confirmation" embed → Google Calendar (to be added).
-- Invoicing: manual via Hnry after each shoot.
+- `build.py` (Python 3 stdlib) assembles `pages/*.html` + `partials/base.html`
+  → `nelson-drone-netlify-deploy/`.
+- All pages are bespoke files in `pages/` with `<!-- key: value -->` meta
+  headers. (The old `content/pages.json` pipeline was removed.)
 
 ## Layout
+
 ```
+docs/BRIEF.md                  # owner's brief — business + copy source of truth
 build.py                       # assembles the site
-partials/base.html             # shared shell (head, header, footer)
-pages/*.html                   # per-page meta + <main> content
+partials/base.html             # shared shell (head, header, footer, LocalBusiness schema)
+pages/*.html                   # per-page meta + body (index, services, work, about, book, privacy, terms)
 static/css, static/js, static/assets
 nelson-drone-netlify-deploy/   # BUILD OUTPUT — committed, published by Netlify
 ```
 
 ## Build & preview
+
 ```bash
 python3 build.py
 cd nelson-drone-netlify-deploy && python3 -m http.server 4321
@@ -28,24 +42,29 @@ cd nelson-drone-netlify-deploy && python3 -m http.server 4321
 ```
 
 ## Deploy
-Commit and push to `main` (`git@github.com:Bengitshub/nelson-drone-website.git`).
-Netlify is connected to the repo with **publish = `nelson-drone-netlify-deploy`**
-and **no build command**.
 
-## Pages
-- Homepage: `pages/index.html` (bespoke).
-- Inner pages: data-driven from `content/pages.json` (services hub, 5 service
-  pages, about, contact, drone-rules guide). Edit the JSON and rebuild.
-- SEO per page: title/description/keywords/canonical, JSON-LD
-  (LocalBusiness site-wide; Breadcrumb/Service/Article/FAQ per page),
-  sitemap.xml, robots.txt.
+Commit and push to `main` (`git@github.com:Bengitshub/nelson-drone-website.git`).
+Netlify publishes `nelson-drone-netlify-deploy/` with no build command
+(see `netlify.toml`).
+
+## SEO
+
+Per page: title/description/keywords/canonical + JSON-LD (LocalBusiness
+site-wide; BreadcrumbList per page; Service + OfferCatalog on /services;
+FAQPage where there's an FAQ), generated `sitemap.xml` + `robots.txt`,
+geo meta, cache-busted assets.
 
 ## Before launch — must be real, not placeholder
-- [ ] Real business name + logo (working name "Skyframe"); set real domain in `SITE_URL` (build.py) + base.html canonical
-- [ ] Real contact details (`PHONE_TEL`/`PHONE_DISPLAY`/`EMAIL` in build.py, footer + JSON-LD in base.html) + social links (`sameAs`)
-- [ ] Real showreel / clips (replace all `Sample`/placeholder media blocks)
-- [ ] Confirm CAA Part 101 wording + insurance are true before publishing; personalise the About "person behind the drone" placeholder
-- [ ] Cal.com booking embed (replace `.book-calendar` slot) + connect Google Calendar; Stripe for manual invoicing
-- [ ] Add Privacy policy, Terms, and weather/reschedule policy pages (+ relink in footer)
-- [ ] Real OG image (1200×630) at `/static/assets/og.svg` → swap for a raster (`og.jpg`) and update `og_image`
-- [ ] Set up Google Business Profile (service-area: Nelson/Tasman) with matching NAP
+
+- [ ] Register domain (`nelsondrone.co.nz` preferred) → set `SITE_URL` in build.py
+- [ ] Legal entity + GST status confirmed; review privacy/terms drafts with a professional
+- [ ] Real contact details (footer + JSON-LD in `partials/base.html`, tel/mailto links in pages)
+- [ ] Verified credential/insurance wording only — nothing invented
+- [ ] Four test shoots → real portfolio media replaces every `Sample`/`Portfolio Project` placeholder
+- [ ] Cal.com account + Google Calendar → replace `.embed-fallback` on /book (see CAL_EMBED comment)
+- [ ] Stripe account for invoicing
+- [ ] Real OG image (1200×630 raster) → update `og_image`
+- [ ] Google Business Profile (service-area business, matching NAP)
+- [ ] Submit sitemap in Search Console
+
+**The site launches on footage, not code.**
