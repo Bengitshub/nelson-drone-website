@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}" />
+  <meta name="theme-color" content="#0a0d12" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:image" content="{{og_image}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://example.netlify.app/" />
+
+  <!-- Fonts (swap for self-hosted before launch if preferred) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/static/css/styles.css?v={{v}}" />
+</head>
+<body class="{{body_class}}">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Skyframe — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+            <path d="M16 2 L30 16 L16 30 L2 16 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M16 9 L23 16 L16 23 L9 16 Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-name">Skyframe<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="/#work">Work</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#process">Process</a></li>
+          <li><a href="/#difference">Why FPV</a></li>
+          <li><a class="btn btn-primary btn-sm" href="/#book">Check availability</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{content}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Skyframe — home">
+          <span class="brand-name">Skyframe<span class="brand-dot">.</span></span>
+        </a>
+        <p class="footer-tag">Immersive FPV drone films — Nelson &amp; Tasman.</p>
+        <p class="footer-note">CAA Part&nbsp;101 compliant · Fully insured · Flown by a professional pilot.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="/#services">Venue fly-throughs</a></li>
+          <li><a href="/#services">Tourism &amp; adventure</a></li>
+          <li><a href="/#services">Real estate</a></li>
+          <li><a href="/#services">Events &amp; weddings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="/#process">How it works</a></li>
+          <li><a href="/#book">Book a shoot</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Get in touch</h3>
+        <ul>
+          <li><a href="mailto:hello@example.co.nz">hello@example.co.nz</a></li>
+          <li><a href="tel:+64000000000">+64 00 000 0000</a></li>
+          <li class="footer-social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>&copy; {{year}} Skyframe. All rights reserved.</p>
+      <p class="footer-placeholder">Working draft — contact details, links &amp; media are placeholders.</p>
+    </div>
+  </footer>
+
+  <script src="/static/js/main.js?v={{v}}" defer></script>
+</body>
+</html>

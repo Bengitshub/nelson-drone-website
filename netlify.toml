@@ -1,0 +1,10 @@
+# Netlify publishes the pre-built folder as-is — no build step, no Node needed.
+# The site is assembled locally with `python3 build.py` and committed.
+[build]
+  publish = "nelson-drone-netlify-deploy"
+  command = ""
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
