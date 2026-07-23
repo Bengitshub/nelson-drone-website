@@ -31,10 +31,11 @@ from pathlib import Path
 
 # ---- Site config -----------------------------------------------------------
 # PLACEHOLDER values — swap for the real ones before launch.
-SITE_URL = "https://www.skyframe.nz"
+# Brand: WIDE ARC — Drone Film Studio (per spec v1.1). Domain unregistered.
+SITE_URL = "https://www.widearc.co.nz"
 PHONE_TEL = "+6430000000"
 PHONE_DISPLAY = "03 000 0000"
-EMAIL = "hello@skyframe.nz"
+EMAIL = "hello@widearc.co.nz"
 BUSINESS_ID = SITE_URL + "/#business"
 
 ROOT = Path(__file__).resolve().parent

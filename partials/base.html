@@ -6,7 +6,7 @@
   <title>{{title}}</title>
   <meta name="description" content="{{description}}" />
   <meta name="keywords" content="{{keywords}}" />
-  <meta name="theme-color" content="#0a0d12" />
+  <meta name="theme-color" content="#0b0c0c" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
 
   <!-- Local / geo targeting (Nelson, NZ) -->
@@ -15,8 +15,9 @@
   <meta name="geo.position" content="-41.2706;173.2840" />
   <meta name="ICBM" content="-41.2706, 173.2840" />
 
-  <!-- Open Graph / social -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Wide Arc — Drone Film Studio" />
   <meta property="og:title" content="{{title}}" />
   <meta property="og:description" content="{{description}}" />
   <meta property="og:image" content="{{og_image}}" />
@@ -25,57 +26,36 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="{{canonical}}" />
 
-  <!-- Fonts (swap for self-hosted before launch if preferred) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="/static/css/styles.css?v={{v}}" />
 
   <!-- Site-wide LocalBusiness structured data. NOTE: phone/email/socials are
-       PLACEHOLDERS — replace with real NAP details before launch (must match
-       the Google Business Profile exactly). -->
+       PLACEHOLDERS — replace with real, verified NAP before launch. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": ["ProfessionalService", "LocalBusiness"],
     "@id": "{{site_url}}/#business",
-    "name": "Skyframe",
-    "description": "FPV drone videography and photography in Nelson and Tasman — immersive, cinematic one-take aerial films for venues, tourism, real estate and events.",
+    "name": "Wide Arc",
+    "alternateName": "Wide Arc — Drone Film Studio",
+    "description": "Cinematic drone films for properties, businesses and experiences across Nelson Tasman. Movement-led fly-throughs and place films for websites, campaigns, listings and social.",
     "url": "{{site_url}}/",
-    "telephone": "+64-3-000-0000",
-    "email": "hello@skyframe.nz",
+    "email": "hello@widearc.co.nz",
     "image": "{{site_url}}/static/assets/og.svg",
-    "priceRange": "$$",
+    "priceRange": "$$$",
     "areaServed": [
       { "@type": "City", "name": "Nelson" },
       { "@type": "AdministrativeArea", "name": "Tasman" },
       { "@type": "AdministrativeArea", "name": "Marlborough" }
     ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Nelson",
-      "addressRegion": "Nelson-Tasman",
-      "addressCountry": "NZ"
-    },
+    "address": { "@type": "PostalAddress", "addressLocality": "Nelson", "addressRegion": "Nelson-Tasman", "addressCountry": "NZ" },
     "geo": { "@type": "GeoCoordinates", "latitude": -41.2706, "longitude": 173.2840 },
-    "knowsAbout": ["FPV drone videography", "aerial cinematography", "real estate video", "event videography", "tourism marketing video"],
-    "sameAs": [
-      "https://www.instagram.com/",
-      "https://www.youtube.com/",
-      "https://www.tiktok.com/"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Drone film services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Venue & hospitality fly-through films" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tourism & adventure films" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Real estate drone video" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event & wedding films" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social & business content" } }
-      ]
-    }
+    "knowsAbout": ["drone videography", "aerial cinematography", "fly-through films", "tourism video", "property video", "360 capture"],
+    "sameAs": ["https://www.instagram.com/", "https://www.youtube.com/"],
+    "slogan": "The whole place, in motion."
   }
   </script>
 </head>
@@ -83,15 +63,15 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" id="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/" aria-label="Skyframe — home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
-            <path d="M16 2 L30 16 L16 30 L2 16 Z" stroke="currentColor" stroke-width="2" fill="none"/>
-            <path d="M16 9 L23 16 L16 23 L9 16 Z" fill="currentColor"/>
+    <div class="container-wide header-inner">
+      <a class="brand" href="/" aria-label="Wide Arc — home">
+        <span class="arc-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M20 12a8 8 0 1 0-4 6.93" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+            <circle cx="16" cy="18.93" r="1.7" fill="currentColor"/>
           </svg>
         </span>
-        <span class="brand-name">Skyframe<span class="brand-dot">.</span></span>
+        <span class="wordmark">Wide&nbsp;Arc</span>
       </a>
 
       <nav class="nav" aria-label="Primary">
@@ -99,11 +79,11 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-menu" id="nav-menu">
+          <li><a href="/work.html">Work</a></li>
           <li><a href="/services.html">Services</a></li>
-          <li><a href="/#work">Work</a></li>
+          <li><a href="/process.html">Process</a></li>
           <li><a href="/about.html">About</a></li>
-          <li><a href="/drone-rules-nelson.html">Drone rules</a></li>
-          <li><a class="btn btn-primary btn-sm" href="/contact.html">Book a shoot</a></li>
+          <li><a class="btn btn-primary" href="/book.html">Plan a shoot</a></li>
         </ul>
       </nav>
     </div>
@@ -114,52 +94,51 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="container-wide footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="/" aria-label="Skyframe — home">
-          <span class="brand-name">Skyframe<span class="brand-dot">.</span></span>
+        <a class="brand" href="/" aria-label="Wide Arc — home">
+          <span class="arc-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 0-4 6.93" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><circle cx="16" cy="18.93" r="1.7" fill="currentColor"/></svg>
+          </span>
+          <span class="wordmark">Wide&nbsp;Arc</span>
         </a>
-        <p class="footer-tag">Immersive FPV drone films — Nelson &amp; Tasman.</p>
-        <p class="footer-note">CAA Part&nbsp;101 compliant · Fully insured · Flown by a professional pilot.</p>
+        <p>Cinematic drone films that move through, around and above real places across Nelson Tasman.</p>
       </div>
 
       <div class="footer-col">
-        <h3>Services</h3>
+        <h3>Studio</h3>
         <ul>
-          <li><a href="/venue-hospitality-drone-video.html">Venue fly-throughs</a></li>
-          <li><a href="/tourism-adventure-drone-video-nelson.html">Tourism &amp; adventure</a></li>
-          <li><a href="/real-estate-drone-video-nelson.html">Real estate</a></li>
-          <li><a href="/wedding-event-drone-video-nelson.html">Weddings &amp; events</a></li>
-          <li><a href="/business-social-content-nelson.html">Business &amp; social</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Company</h3>
-        <ul>
-          <li><a href="/services.html">All services</a></li>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/process.html">Process</a></li>
           <li><a href="/about.html">About</a></li>
-          <li><a href="/drone-rules-nelson.html">Drone rules in Nelson</a></li>
-          <li><a href="/contact.html">Contact &amp; book</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h3>Get in touch</h3>
+        <h3>Region &amp; safety</h3>
         <ul>
-          <li><a href="mailto:hello@skyframe.nz">hello@skyframe.nz</a></li>
+          <li><a href="/flight-safety.html">Flight safety</a></li>
+          <li><a href="/book.html">Plan a shoot</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@widearc.co.nz">hello@widearc.co.nz</a></li>
           <li><a href="tel:+6430000000">03 000 0000</a></li>
-          <li class="footer-social">
-            <a href="#" aria-label="Instagram">Instagram</a>
-            <a href="#" aria-label="YouTube">YouTube</a>
-            <a href="#" aria-label="TikTok">TikTok</a>
-          </li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
         </ul>
       </div>
     </div>
-    <div class="container footer-base">
-      <p>&copy; {{year}} Skyframe. All rights reserved.</p>
-      <p class="footer-placeholder">Working draft — contact details, links &amp; media are placeholders.</p>
+    <div class="container-wide footer-base">
+      <span>&copy; {{year}} Wide Arc. Nelson Tasman, New Zealand.</span>
+      <span>Working draft — brand, contact details, media and legal entity are placeholders pending verification.</span>
     </div>
   </footer>
 
