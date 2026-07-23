@@ -1,7 +1,7 @@
 # Netlify publishes the pre-built folder as-is — no build step, no Node needed.
 # The site is assembled locally with `python3 build.py` and committed.
 [build]
-  publish = "nelson-drone-netlify-deploy"
+  publish = "haven-aerials-netlify-deploy"
   command = ""
 
 [[headers]]

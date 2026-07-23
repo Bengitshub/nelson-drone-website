@@ -1,51 +1,92 @@
-# Nelson FPV Drone Website (working name: **Skyframe**)
+# Haven Aerials — website
 
-Static marketing site for a Nelson–Tasman FPV drone film business.
-Built the same way as the other sites in `~/Sites`: a small Python builder
-assembles pages from partials into a deploy folder that Netlify serves as-is.
-**No Node required.**
+Marketing site for **Haven Aerials**, a one-pilot drone photography and
+videography business serving Nelson, Tasman and Marlborough (NZ). Named for
+Nelson Haven — the sheltered water behind the Boulder Bank.
+
+The business and copy decisions live in [`docs/BRIEF.md`](docs/BRIEF.md) — the
+founding brief and single source of truth. Built with a small Python builder
+into a folder Netlify serves as-is. **No Node required.**
+
+## The business model (short)
+
+Four packages — Aerial Photos (from $290), Photos + Clips (from $490), The
+Short Cut (from $690) and Progress Flights (from $240/visit). "From" pricing;
+a **written quote fixes the price before takeoff**. Booking is a *request*
+(the CTA is "Check a date"), handled by a Cal.com embed synced to Google
+Calendar. Invoicing is done with **Stripe** after delivery — nothing is
+charged on the site. Signature policy: the **Weather Promise** — marginal days
+are called early and rescheduled free.
 
 ## Stack
+
 - Hand-written HTML/CSS/vanilla JS — no framework.
-- `build.py` (Python 3 stdlib) assembles `pages/*` + `partials/base.html` → `nelson-drone-netlify-deploy/`.
-- Booking: Cal.com "Requires Confirmation" embed → Google Calendar (to be added).
-- Invoicing: manual via Hnry after each shoot.
+- `build.py` (Python 3 stdlib) assembles `pages/*.html` + `partials/base.html`
+  → `haven-aerials-netlify-deploy/`.
+- Every page is a bespoke file in `pages/` with `<!-- key: value -->` meta
+  headers. Structured data lives inside each page; site-wide LocalBusiness
+  schema is in `partials/base.html`.
+
+## Design system — "golden hour on the Haven"
+
+Warm paper & sand backgrounds, deep-sea teal CTAs, amber sun accents.
+Fraunces (display) + Inter (body). Pill buttons, 18px cards, soft warm
+shadows. Tokens live at the top of `static/css/styles.css`. Logo is a
+viewfinder square holding a horizon + sun disc.
 
 ## Layout
+
 ```
-build.py                       # assembles the site
-partials/base.html             # shared shell (head, header, footer)
-pages/*.html                   # per-page meta + <main> content
+docs/BRIEF.md                    # founding brief — business + copy source of truth
+build.py                         # assembles the site
+partials/base.html               # shared shell (head, header, footer, schema)
+pages/*.html                     # index, services, work, about, book, privacy, terms
 static/css, static/js, static/assets
-nelson-drone-netlify-deploy/   # BUILD OUTPUT — committed, published by Netlify
+haven-aerials-netlify-deploy/    # BUILD OUTPUT — committed, published by Netlify
 ```
 
 ## Build & preview
+
 ```bash
 python3 build.py
-cd nelson-drone-netlify-deploy && python3 -m http.server 4321
+cd haven-aerials-netlify-deploy && python3 -m http.server 4321
 # open http://localhost:4321
 ```
 
 ## Deploy
-Commit and push to `main` (`git@github.com:Bengitshub/nelson-drone-website.git`).
-Netlify is connected to the repo with **publish = `nelson-drone-netlify-deploy`**
-and **no build command**.
 
-## Pages
-- Homepage: `pages/index.html` (bespoke).
-- Inner pages: data-driven from `content/pages.json` (services hub, 5 service
-  pages, about, contact, drone-rules guide). Edit the JSON and rebuild.
-- SEO per page: title/description/keywords/canonical, JSON-LD
-  (LocalBusiness site-wide; Breadcrumb/Service/Article/FAQ per page),
-  sitemap.xml, robots.txt.
+Commit and push to `main` (`git@github.com:Bengitshub/nelson-drone-website.git`).
+Netlify publishes `haven-aerials-netlify-deploy/` with no build command
+(see `netlify.toml`).
+
+## SEO
+
+Per page: title/description/keywords/canonical + JSON-LD (LocalBusiness
+site-wide; BreadcrumbList per page; Service + OfferCatalog on /services;
+FAQPage on the homepage), generated `sitemap.xml` + `robots.txt`, geo meta,
+cache-busted assets. Verified: 7 pages build, all JSON-LD valid, one `<h1>`
+per page, no broken links, no horizontal overflow at 375px.
 
 ## Before launch — must be real, not placeholder
-- [ ] Real business name + logo (working name "Skyframe"); set real domain in `SITE_URL` (build.py) + base.html canonical
-- [ ] Real contact details (`PHONE_TEL`/`PHONE_DISPLAY`/`EMAIL` in build.py, footer + JSON-LD in base.html) + social links (`sameAs`)
-- [ ] Real showreel / clips (replace all `Sample`/placeholder media blocks)
-- [ ] Confirm CAA Part 101 wording + insurance are true before publishing; personalise the About "person behind the drone" placeholder
-- [ ] Cal.com booking embed (replace `.book-calendar` slot) + connect Google Calendar; Stripe for manual invoicing
-- [ ] Add Privacy policy, Terms, and weather/reschedule policy pages (+ relink in footer)
-- [ ] Real OG image (1200×630) at `/static/assets/og.svg` → swap for a raster (`og.jpg`) and update `og_image`
-- [ ] Set up Google Business Profile (service-area: Nelson/Tasman) with matching NAP
+
+- [ ] Register `havenaerials.nz` (check availability first) → set `SITE_URL` in build.py
+- [ ] Confirm legal entity + GST status; have a professional review privacy/terms drafts
+- [ ] Real contact details (footer + JSON-LD in `partials/base.html`, tel/mailto in pages)
+- [ ] Verified pilot name, photo, credential & insurance wording (see `<!-- OPERATOR -->` in about.html) — nothing invented
+- [ ] Four portfolio shoots → real media replaces every `Sample flight` placeholder
+- [ ] Cal.com account + Google Calendar → replace `.embed-fallback` in book.html (see `<!-- CAL_EMBED -->`)
+- [ ] Stripe account for invoicing
+- [ ] Real OG image (1200×630 raster) → update `og_image`
+- [ ] Google Business Profile (service-area business, matching NAP)
+- [ ] Submit sitemap in Search Console
+
+**The site launches on footage, not code.**
+
+---
+
+### Project history
+
+This repo previously explored a different brand direction (Nelson Drone Co.,
+and earlier FortyOne South / Wide Arc / Skyframe). Those are preserved on
+branches (`nelson-drone-co-v2`, `fortyone-south-scenic`) and in git history.
+`main` is Haven Aerials — a from-scratch rebuild.

@@ -1,12 +1,6 @@
-/* Wide Arc — minimal, dependency-free interactions */
+/* Haven Aerials — minimal, dependency-free interactions */
 (function () {
   "use strict";
-
-  // Sticky header state
-  var header = document.getElementById("site-header");
-  var onScroll = function () { if (header) header.classList.toggle("scrolled", window.scrollY > 24); };
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
 
   // Mobile nav
   var toggle = document.querySelector(".nav-toggle");
@@ -20,10 +14,7 @@
     menu.addEventListener("click", function (e) { if (e.target.closest("a")) setOpen(false); });
   }
 
-  // Draw the route-line device once, immediately (above-the-fold safe)
-  document.querySelectorAll(".route").forEach(function (r) { r.classList.add("in"); });
-
-  // Reveal-on-scroll for editorial sections
+  // Reveal-on-scroll
   var els = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window) || els.length === 0) {
     els.forEach(function (el) { el.classList.add("in"); });
