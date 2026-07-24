@@ -15,10 +15,11 @@
   <rect width="1200" height="630" fill="url(#dusk)"/>
   <line x1="0" y1="378" x2="1200" y2="378" stroke="#20242B" stroke-opacity="0.16" stroke-width="3"/>
   <circle cx="950" cy="340" r="46" fill="url(#sunball)"/>
-  <g transform="translate(84,120)" fill="none" stroke="#20242B" stroke-width="6" stroke-linecap="round">
-    <rect x="0" y="0" width="116" height="116" rx="30"/>
-    <path d="M0 80h116"/>
-    <circle cx="58" cy="57" r="23"/>
+  <g transform="translate(84,120)" fill="none" stroke="#20242B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 40 76 76M76 40 40 76"/>
+    <circle cx="58" cy="58" r="13"/>
+    <circle cx="58" cy="58" r="3" fill="#20242B" stroke="none"/>
+    <circle cx="28" cy="28" r="15"/><circle cx="88" cy="28" r="15"/><circle cx="28" cy="88" r="15"/><circle cx="88" cy="88" r="15"/>
   </g>
   <text x="84" y="360" font-family="Fraunces, Georgia, serif" font-size="88" font-weight="600" fill="#20242B">Haven Aerials</text>
   <text x="86" y="416" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="600" letter-spacing="5" fill="#5C5850">DRONE PHOTO &amp; VIDEO · NELSON</text>
