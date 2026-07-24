@@ -24,22 +24,35 @@ business or event — delivered fast, priced in writing before takeoff.
 **What this is not:** a film studio, a survey company, an agency. No mapping,
 no thermal inspections, no certified measurements, no full wedding films, no
 scripted productions, no interview/audio work, no motion graphics, no
-film-grade colour pipelines, and no promises about going viral.
+film-grade colour pipelines, and no promises about going viral. Editing is an
+add-on, not a core promise (the finished-content pitch overstates a one-person
+capability).
 
-## 2. Voice — first person, weather-honest
+**Descriptor:** *Drone photography, video and 360° capture · Nelson* — 360° is
+the one meaningful technical point of difference (the Avata 360 genuinely does
+8K 360° video + high-res 360° stills), so it belongs in the descriptor.
 
-The site speaks as the pilot: **I, me, my**. One person flies your job, so
-one person talks to you. Warm, direct, concrete New Zealand English.
+## 2. Voice — first person, weather-honest, not over-explained
 
-- Say: "I'll check the airspace before I quote", "written quote before
-  takeoff", "I call the weather early", "download link", "Stripe invoice".
+The site speaks as the operator: **I, me, my**. Warm, direct, concrete NZ
+English. State the one-operator positioning **once** on the homepage and once on
+About — don't repeat "just me / one-man band" everywhere (it starts reassuring
+and ends up sounding small). Approved line: *"one experienced operator and one
+point of contact from planning through to delivery."* Don't imply the operator
+is physically alone on every flight — FPV with goggles needs an observer under
+Part 101, and support is brought in where a flight requires it.
+
+- Say: "I'll check the airspace before I quote", "written quote before the
+  shoot", "I call the weather early", "download link", "invoice details by email".
 - Banned: cinematic, breathtaking, stunning, elevate, cutting-edge,
   storytelling, world-class, "Book now" (a booking is always a request —
-  the CTA verb is **"Check a date"**).
+  the CTA verb is **"Request a shoot"**).
 - Never invent: clients, testimonials, credentials, insurance, permits,
-  operator names. Samples are labelled **Sample flight** until real client
-  work replaces them. Contact details are placeholders until Ben confirms
-  the real ones.
+  operator names, or project names/locations on the portfolio. Samples are
+  labelled **Sample** until real client work replaces them. Never claim
+  "certified / licensed / CAA approved" without a specific Part 102 qualification
+  — standard work runs under Part 101. Contact details are placeholders until
+  Ben confirms the real ones.
 
 **The Weather Promise** (signature policy, gets its own homepage section):
 if the window isn't right, I call it early — usually the day before — and we
@@ -48,38 +61,38 @@ cancellation.
 
 ## 3. Services & pricing
 
-| # | Package | From | What's in it |
-|---|---|---|---|
-| 1 | **Aerial Photos** | NZ$290 | Up to 30 min on site · 12+ edited stills · full-res + web-sized · Nelson/Richmond travel included |
-| 2 | **Photos + Clips** | NZ$490 | Up to 45 min on site · 12+ stills · 6–10 trimmed, colour-balanced clips (no music/titles — made for your editor or social team) |
-| 3 | **The Short Cut** | NZ$690 | A 20–45 second edited piece: licensed track, clean pacing, your logo/title card, one format (horizontal or vertical), one revision, plus 5 stills |
-| 4 | **Progress Flights** | NZ$240 / visit | Same viewpoints every visit · dated folders · short clips · three-visit minimum recommended · end-of-project comparison quoted separately |
+Four **core** services (360° promoted to core; editing demoted to add-on):
 
-Add-ons (quoted per job): vertical version of The Short Cut, extra revision,
-raw/selected footage handover, second location, priority 48-hour delivery,
-extra travel beyond Nelson/Richmond, FPV fly-through planning.
+| # | Service | From | What's in it |
+|---|---|---|---|
+| 1 | **Aerial photography** | NZ$290 | 12+ edited stills · full-res + web-ready · Nelson/Richmond travel included · delivery within 3 working days |
+| 2 | **Aerial photography + video** | NZ$490 | 12+ stills · 6–10 trimmed clips · basic colour correction · horizontal or vertical where practical · usable yourself or by an editor · delivery within 5 working days |
+| 3 | **Construction progress** | NZ$240 / visit | Repeat agreed viewpoints · edited photos · short progress clips · dated folders · discounted for ongoing schedules |
+| 4 | **FPV + 360° capture** | Quoted / project | 8K 360° video + high-res 360° stills · FPV fly-throughs · interactive 360° viewpoints · specialist, planned per location · observer may be required under Part 101 |
+
+**Add-ons:** *Simple social edit* from $195 (20–45s basic edit — one format, one
+track, one revision, no voiceover/interviews/animation/effects); *360° aerial
+view* from $150 (a single or small number of interactive aerial viewpoints —
+not a full virtual tour); additional location; vertical video versions;
+priority delivery; travel outside the local area.
 
 Rules: "from" pricing everywhere; the **written quote fixes the price** and
-states the total payable; no payment taken on the website; delivery targets
-are three working days for photos, five for video — targets I set, stated as
-targets.
+states the total payable; no payment taken on the website; delivery targets are
+three working days for photos, five for video — stated as targets, not guarantees.
 
 ## 4. How a job runs
 
-1. **Check a date** — client picks a provisional slot (Cal.com, requires
-   confirmation, 48 h minimum notice, Pacific/Auckland) and answers the job
-   questions: location, what to capture, where it'll be used, date
-   flexibility, site ownership/permission, access notes.
-2. **Desk scout** — I check airspace (Nelson Airport control zone matters),
-   landowner permission, people, wildlife, privacy and the weather outlook.
-3. **Written quote** — fixed price, scope, deliverables. Once accepted, the
-   booking is confirmed in Cal.com.
-4. **Fly** — inside the agreed window; the pilot's safety/legality call is
-   final.
-5. **Deliver** — organised download link; photos target 3 working days,
-   video 5.
-6. **Invoice** — **Stripe** invoice after delivery; pay online by card or
-   bank transfer; 7-day terms (placeholder).
+1. **Request a shoot** — client submits location, preferred date and required
+   service (Cal.com, requires confirmation, 48 h minimum notice, Pacific/Auckland).
+2. **Feasibility check** — I check airspace (Nelson Airport control zone),
+   access and whether the site can be flown safely and legally.
+3. **Written quote** — sent manually by email; fixed price, scope, deliverables.
+4. **Confirm** — once the quote is accepted, the booking is confirmed.
+5. **Fly & deliver** — inside the agreed window (pilot's safety/legality call is
+   final); organised download link, photos target 3 working days, video 5.
+6. **Invoice** — invoice details sent **by email**; payment terms are stated on
+   each quote and invoice, kept flexible. The payment tool (Stripe / bank
+   transfer / Xero, TBD) is operational detail and is NOT named across the site.
 
 I fly under New Zealand's standard drone rules (CAA Part 101): line of
 sight, altitude limits, consent for people and property below, controlled
@@ -108,11 +121,14 @@ Type: **Fraunces** (display — headings, 500–650, tight leading) +
 soft warm shadows. Container 1160px. Motion: gentle reveal only, respects
 reduced-motion.
 
-Logo mark: a rounded viewfinder square containing a horizon line with a sun
-disc sitting on it — camera + coastline in one, works single-colour.
+Logo mark: a **top-down camera-quadcopter** — four rotor props, an X-frame and a
+centre camera lens. Reads unmistakably as a drone, works single-colour (amber).
 
-Placeholder media blocks use golden-hour gradients (amber → sea-glass →
-paper) with an ⟡ "Sample flight" tag. No stock photos, ever.
+Media: **royalty-free aerial photos** (Pexels, free for commercial use, no
+attribution) in `static/assets/img/`, optimised with Pillow. Used as tasteful
+placeholders with a small "Sample" tag; the footer notes media are placeholders
+and the /work copy calls them reference images. NO stock is ever passed off as
+the operator's own client work — swap all of it for real Avata footage at launch.
 
 ## 6. Site map & page jobs
 
@@ -121,17 +137,17 @@ Static site, Python builder (`build.py`), deploy folder
 domain: `https://www.havenaerials.nz` (register before launch). Placeholder
 contact: `hello@havenaerials.nz`, `03 000 0000` / `tel:+6430000000`.
 
-Nav order (portfolio-led): **Work · Services · About · [Check a date]**
+Nav order (portfolio-led): **Work · Services · About · [Request a shoot]**
 
 | Page | Job | Notes |
 |---|---|---|
-| `/` | Understand + trust + request | Hero, trust strip, recent work, services w/ prices, process, Weather Promise, who books, about teaser, FAQ, final CTA |
-| `/services` | Choose + price | Package detail cards, what's in each, add-ons, delivery targets, the honest "what I don't do" list |
-| `/work` | Proof | Sample-flight grid (honest labels), the four pre-launch portfolio shoots plan, early-subject invitation |
-| `/about` | Trust the pilot | The pilot (name/photo = placeholder comment for Ben), the aircraft, how I plan, rules I fly under, service area |
-| `/book` | Convert | "Check a date" explainer, Cal.com embed shell + fallback, what to have ready, request disclaimer |
-| `/privacy` | Compliance | Plain-English: Cal.com booking data, Stripe payments, aerial footage & neighbours, Privacy Act 2020, retention, contact |
-| `/terms` | Protect both sides | Request model, written quotes, Weather Promise terms, access/permissions, pilot's call, deliverables & revision, usage licence, Stripe terms, liability |
+| `/` | Understand + trust + request | Hero (commercial proposition), trust strip, recent work, four services w/ prices, process, trimmed Weather Promise, who books, one-operator teaser, FAQ, final CTA |
+| `/services` | Choose + price | Four service rows (photography, photography+video, construction progress, FPV+360), add-ons (social edit $195, 360° view $150, +others), one-line scope statement, CTA. NO duplicate "at a glance" grid. |
+| `/work` | Proof | Reference-image grid with service-type captions only (no fake project names/locations), pre-launch shoots plan, early-subject invitation. Cannot truly launch until 4 real shoots exist. |
+| `/about` | Trust the operator | Independent-operator positioning (stated once), one-sentence name story, short equipment blurb, how I plan, Part 101 rules, service area |
+| `/book` | Convert | "Request a shoot" explainer, 5-step process, Cal.com embed shell + fallback, what to have ready, request disclaimer |
+| `/privacy` | Compliance | Plain-English: Cal.com booking data, payment-provider data (not named), aerial footage & neighbours, Privacy Act 2020, retention, contact |
+| `/terms` | Protect both sides | Request model, written quotes, Weather Promise terms, access/permissions, pilot's call, deliverables & revision, usage licence, payment terms (flexible, by email), liability |
 
 SEO: titles "Keyword | Haven Aerials"; original descriptions ≤160 chars;
 canonical + BreadcrumbList everywhere; Service+OfferCatalog on /services;
@@ -141,8 +157,19 @@ legal 0.3.
 
 ## 7. Launch gates (Ben supplies — the site launches on footage, not code)
 
-Register domain; confirm legal entity + GST status; verified pilot
-name/credentials/insurance wording; real phone/email; Cal.com + Google
-Calendar; Stripe account; four portfolio shoots (a home or lifestyle block,
-an accommodation or venue, a build site, something moving on the water);
-Google Business Profile; legal review of privacy/terms drafts.
+**Mandatory before public launch:**
+- Real operator name + a real photograph of the operator
+- Real phone number and email
+- Public liability insurance (once obtained) + accurate operating credentials
+  (Part 101; only say "certified/licensed/CAA approved" with a real Part 102 qual)
+- **Real portfolio** — at least four genuine shoots (residential/lifestyle
+  property; accommodation/tourism/venue; construction/development; marine,
+  orchard, vineyard or outdoor activity), each 8–12 final photos + several clips
+  + one 360° output where appropriate + client permission + short description.
+  Remove the "reference images" explanation once these exist.
+- At least three genuine testimonials
+- Final legal entity + GST status; final payment policy; final media-retention period
+- Working Cal.com booking calendar (→ Google Calendar); registered domain
+- Google Business Profile; legal review of privacy/terms drafts
+
+There is no shortcut on the portfolio — for a drone business it is the proof.
